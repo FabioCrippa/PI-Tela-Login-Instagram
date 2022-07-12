@@ -1,0 +1,225 @@
+/*resetar alguns elementos*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+.instagram-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5
+}
+
+.instagram-phone img {
+    height: 50rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.instagram-continue {
+    display: flex;
+    /*agora ficou na horizontal-o eixo vira*/
+    align-items: center;
+    /*agora ficou na vertical -o eixo vira*/
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+}
+
+.group1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 350px;
+    height: 396px;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    margin-top: 60px;
+}
+
+input {
+    outline: 0;
+}
+
+#placeholder {
+    padding: 10px;
+    margin: 3px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+#entrar {
+    padding: 7px;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #70baf3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.entrar-com {
+    display: flex;
+    align-items: center;
+}
+
+.entrar-com img {
+    margin: 10px;
+    width: 9%;
+}
+
+.entrar-com a {
+    font-size: 13px;
+    color: #2f55a4;
+    font-weight: bold;
+}
+
+.forget a {
+    font-size: 11px;
+    color: #2f55a4;
+}
+
+.group2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    height: 63px;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-top: 10px;
+
+}
+
+.group2 p {
+    color: black;
+}
+
+.group2 a {
+    color: #0095f6;
+    font-weight: bold;
+}
+
+/*conatiner 1*/
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    /*size: a seguir setaremos os filhos*/
+    background-size: cover;
+    margin: 6px;
+    margin-top: 20px;
+}
+
+.app-download:nth-child(1) {
+    background-image: url(imagens/app-store.png);
+}
+
+.app-download:nth-child(2) {
+    background-image: url(imagens/google-play.png);
+}
+
+/*media query*/
+@media (max-width:1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width:650px) {
+    body {
+        background-color: white;
+    }
+    
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    /*na tela responsiva a imagens do telefone ficará oculta*/
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent ;
+    }
+}
+
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+}
+
+.rodape a{
+    margin: 5px;
+    color: gray;
+    font-size: 12px;
+}
+
+.rodape-fim {
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+}
+
+.rodape-fim p{
+    margin: 5px;
+    color: gray;
+    font-size: 12px;
+}
